@@ -14,7 +14,7 @@ class MainViewController: UIViewController {
     var company = [Company] ()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "Companies"
         NetworkingService.networkCall.getCompanies { (company) in
             self.company = company
             self.companyCollectionV.reloadData()
