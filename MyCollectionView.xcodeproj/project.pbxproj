@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		374547AE21D60811004DA073 /* CompanyDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374547AD21D60811004DA073 /* CompanyDetailVC.swift */; };
+		374547B121D60C0B004DA073 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374547B021D60C0B004DA073 /* NetworkingService.swift */; };
+		374547B521D60C1B004DA073 /* Geolocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374547B321D60C1B004DA073 /* Geolocation.swift */; };
+		374547B621D60C1B004DA073 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374547B421D60C1B004DA073 /* Company.swift */; };
+		374547B821D60CE9004DA073 /* ButtonForCompanyTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374547B721D60CE9004DA073 /* ButtonForCompanyTable.swift */; };
 		37C28BDB21D4AA8000D2CDA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C28BDA21D4AA8000D2CDA9 /* AppDelegate.swift */; };
 		37C28BDD21D4AA8000D2CDA9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C28BDC21D4AA8000D2CDA9 /* MainViewController.swift */; };
 		37C28BE021D4AA8000D2CDA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37C28BDE21D4AA8000D2CDA9 /* Main.storyboard */; };
@@ -15,10 +19,6 @@
 		37C28BE521D4AA8200D2CDA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37C28BE321D4AA8200D2CDA9 /* LaunchScreen.storyboard */; };
 		37C28BF021D4AA8300D2CDA9 /* MyCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C28BEF21D4AA8300D2CDA9 /* MyCollectionViewTests.swift */; };
 		37C28BFB21D4AA8300D2CDA9 /* MyCollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C28BFA21D4AA8300D2CDA9 /* MyCollectionViewUITests.swift */; };
-		37C28C0E21D4C7D400D2CDA9 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C28C0C21D4C7D400D2CDA9 /* Company.swift */; };
-		37C28C0F21D4C7D400D2CDA9 /* Geolocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C28C0D21D4C7D400D2CDA9 /* Geolocation.swift */; };
-		37C28C1221D4C7DE00D2CDA9 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C28C1121D4C7DE00D2CDA9 /* NetworkingService.swift */; };
-		37C28C1421D4C80000D2CDA9 /* ButtonForCompanyTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C28C1321D4C80000D2CDA9 /* ButtonForCompanyTable.swift */; };
 		37C28C1621D4D25300D2CDA9 /* CompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C28C1521D4D25300D2CDA9 /* CompanyCell.swift */; };
 		60ECB16D41CDB4025C233C92 /* Pods_MyCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED427767814FF3A6DAC78A08 /* Pods_MyCollectionView.framework */; };
 		64495B2CCBFDB031DD31D7E0 /* Pods_MyCollectionViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36092016165273AD088BDFBE /* Pods_MyCollectionViewUITests.framework */; };
@@ -45,6 +45,10 @@
 /* Begin PBXFileReference section */
 		36092016165273AD088BDFBE /* Pods_MyCollectionViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCollectionViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		374547AD21D60811004DA073 /* CompanyDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyDetailVC.swift; sourceTree = "<group>"; };
+		374547B021D60C0B004DA073 /* NetworkingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		374547B321D60C1B004DA073 /* Geolocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geolocation.swift; sourceTree = "<group>"; };
+		374547B421D60C1B004DA073 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		374547B721D60CE9004DA073 /* ButtonForCompanyTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonForCompanyTable.swift; sourceTree = "<group>"; };
 		37C28BD721D4AA8000D2CDA9 /* MyCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C28BDA21D4AA8000D2CDA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37C28BDC21D4AA8000D2CDA9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -58,10 +62,6 @@
 		37C28BF621D4AA8300D2CDA9 /* MyCollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C28BFA21D4AA8300D2CDA9 /* MyCollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewUITests.swift; sourceTree = "<group>"; };
 		37C28BFC21D4AA8300D2CDA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37C28C0C21D4C7D400D2CDA9 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Company.swift; path = ../../AlamofireAndGloss/AlamofireAndGloss/Models/Company.swift; sourceTree = "<group>"; };
-		37C28C0D21D4C7D400D2CDA9 /* Geolocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Geolocation.swift; path = ../../AlamofireAndGloss/AlamofireAndGloss/Models/Geolocation.swift; sourceTree = "<group>"; };
-		37C28C1121D4C7DE00D2CDA9 /* NetworkingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
-		37C28C1321D4C80000D2CDA9 /* ButtonForCompanyTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonForCompanyTable.swift; path = ../../AlamofireAndGloss/AlamofireAndGloss/Views/ButtonForCompanyTable.swift; sourceTree = "<group>"; };
 		37C28C1521D4D25300D2CDA9 /* CompanyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCell.swift; sourceTree = "<group>"; };
 		6E59F326937F561C4134B1DC /* Pods-MyCollectionViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCollectionViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCollectionViewTests/Pods-MyCollectionViewTests.release.xcconfig"; sourceTree = "<group>"; };
 		983233464E77D4884EB6A6CE /* Pods-MyCollectionViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCollectionViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyCollectionViewUITests/Pods-MyCollectionViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +114,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		374547AF21D60C0B004DA073 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				374547B021D60C0B004DA073 /* NetworkingService.swift */,
+			);
+			path = Network;
+			sourceTree = SOURCE_ROOT;
+		};
+		374547B221D60C1B004DA073 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				374547B321D60C1B004DA073 /* Geolocation.swift */,
+				374547B421D60C1B004DA073 /* Company.swift */,
+			);
+			path = Models;
+			sourceTree = SOURCE_ROOT;
+		};
 		37C28BCE21D4AA8000D2CDA9 = {
 			isa = PBXGroup;
 			children = (
@@ -139,10 +156,10 @@
 		37C28BD921D4AA8000D2CDA9 /* MyCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				37C28C1021D4C7DE00D2CDA9 /* Network */,
+				374547B221D60C1B004DA073 /* Models */,
+				374547AF21D60C0B004DA073 /* Network */,
 				37C28C0B21D4AB6F00D2CDA9 /* Supports */,
 				37C28C0A21D4AB2500D2CDA9 /* Controllers */,
-				37C28C0821D4AB2500D2CDA9 /* Models */,
 				37C28C0921D4AB2500D2CDA9 /* Views */,
 			);
 			path = MyCollectionView;
@@ -166,19 +183,10 @@
 			path = MyCollectionViewUITests;
 			sourceTree = "<group>";
 		};
-		37C28C0821D4AB2500D2CDA9 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				37C28C0C21D4C7D400D2CDA9 /* Company.swift */,
-				37C28C0D21D4C7D400D2CDA9 /* Geolocation.swift */,
-			);
-			path = Models;
-			sourceTree = SOURCE_ROOT;
-		};
 		37C28C0921D4AB2500D2CDA9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				37C28C1321D4C80000D2CDA9 /* ButtonForCompanyTable.swift */,
+				374547B721D60CE9004DA073 /* ButtonForCompanyTable.swift */,
 				37C28C1521D4D25300D2CDA9 /* CompanyCell.swift */,
 			);
 			path = Views;
@@ -203,15 +211,6 @@
 				37C28BDA21D4AA8000D2CDA9 /* AppDelegate.swift */,
 			);
 			path = Supports;
-			sourceTree = "<group>";
-		};
-		37C28C1021D4C7DE00D2CDA9 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				37C28C1121D4C7DE00D2CDA9 /* NetworkingService.swift */,
-			);
-			name = Network;
-			path = ../../AlamofireAndGloss/AlamofireAndGloss/Network;
 			sourceTree = "<group>";
 		};
 		85192E33F99B67C7A4CEC039 /* Frameworks */ = {
@@ -452,14 +451,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				374547B821D60CE9004DA073 /* ButtonForCompanyTable.swift in Sources */,
 				37C28C1621D4D25300D2CDA9 /* CompanyCell.swift in Sources */,
-				37C28C1221D4C7DE00D2CDA9 /* NetworkingService.swift in Sources */,
-				37C28C0F21D4C7D400D2CDA9 /* Geolocation.swift in Sources */,
 				374547AE21D60811004DA073 /* CompanyDetailVC.swift in Sources */,
+				374547B521D60C1B004DA073 /* Geolocation.swift in Sources */,
 				37C28BDD21D4AA8000D2CDA9 /* MainViewController.swift in Sources */,
+				374547B121D60C0B004DA073 /* NetworkingService.swift in Sources */,
 				37C28BDB21D4AA8000D2CDA9 /* AppDelegate.swift in Sources */,
-				37C28C1421D4C80000D2CDA9 /* ButtonForCompanyTable.swift in Sources */,
-				37C28C0E21D4C7D400D2CDA9 /* Company.swift in Sources */,
+				374547B621D60C1B004DA073 /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
